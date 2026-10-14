@@ -1,5 +1,5 @@
 
-package com.creditbook.creditbook.config;
+package com.example.demo.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,7 +12,6 @@ public class CorsConfig {
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
-
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
@@ -21,11 +20,8 @@ public class CorsConfig {
                                 "https://creditbooknew2.vercel.app"
                         )
                         .allowedMethods(
-                                "GET",
-                                "POST",
-                                "PUT",
-                                "DELETE",
-                                "OPTIONS"
+                                "GET", "POST", "PUT",
+                                "DELETE", "OPTIONS"
                         )
                         .allowedHeaders("*");
             }

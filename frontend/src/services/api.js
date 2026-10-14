@@ -1,4 +1,4 @@
-const API_URL = `${import.meta.env.VITE_API_URL || "http://localhost:8080"}/api/customers`;
+const API_URL = "https://creditbooknew-2.onrender.com/api/customers";
 
 async function request(url, options = {}) {
   const response = await fetch(url, {

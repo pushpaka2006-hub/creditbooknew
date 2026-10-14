@@ -1,7 +1,8 @@
 
 import { useEffect, useState } from "react";
 import "./CreditManager.css";
-const API_URL = `${import.meta.env.VITE_API_URL}/api/customers`;
+
+const API_URL = "https://creditbooknew-2.onrender.com/api/customers";
 
 const money = (amount) =>
   new Intl.NumberFormat("en-IN", {

@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import "./CreditManager.css";
 
-const API = "http://localhost:8080/api/customers";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8080";
 
 const money = (amount) =>
   new Intl.NumberFormat("en-IN", {
